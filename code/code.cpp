@@ -94,14 +94,6 @@ void init_code(){
     #endif
 }
 
-bool Is_sorted(vector<ll>&V, ll n){
-    ll key=0;
-for(int i=0; i<n-1; i++){
- if(V[i+1]>=V[i]){
-    key++;
- }
-}
-
 
 bool Issafe(vector<vector<ll>>&grid, ll i, ll j, ll k, ll N){
     for(ll z=0; z<N ; z++){
@@ -122,6 +114,7 @@ bool Issafe(vector<vector<ll>>&grid, ll i, ll j, ll k, ll N){
     }
     return true;
 }
+
 bool solve_suduko( vector<vector<ll>> &grid , ll N){
 ll i, j;
 ll key=0;
